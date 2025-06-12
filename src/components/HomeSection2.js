@@ -60,7 +60,7 @@ export default function HomeSection2() {
                         em atendê-lo!
                     </p>
                     <Button variant="dark" className="btn-send-signal">
-                        MANDAR SINAL
+                        <strong>MANDAR SINAL</strong>
                     </Button>
                 </div>
             </Container>
