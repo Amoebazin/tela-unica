@@ -1,4 +1,4 @@
-.App {
+  .App {
   text-align: center;
 }
 
@@ -45,6 +45,7 @@
   color: black;
   background-color: rgb(238, 200, 44);
   border: none;
+  margin-right: -90px;
 }
 
 .btn-dark:hover {

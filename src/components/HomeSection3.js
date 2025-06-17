@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Container, Carousel, Button } from 'react-bootstrap';
 import '../Apphs3.css';
 
 const arrowIMG = '/img/img3.png';
 
 export default function HomeSection3() {
+    const [index, setIndex] = useState(0);
+    
+        const handleSelect = (selectedIndex) => {
+            setIndex(selectedIndex);
+        };
     return(
         <div className="home-section-3">
             <Container className="home-section-3-content">
@@ -24,7 +29,9 @@ export default function HomeSection3() {
                 
                 <div className="hero-carousel-container-3">
               
-                    <Carousel fade controls indicators interval={null}>
+                    <Carousel controls={false} indicators={false}
+                              activeIndex={index}
+                              onSelect={handleSelect}  >
                         <Carousel.Item className="home-section-3-carousel-item">
                             <img
                                 className="d-block w-100"
@@ -49,6 +56,15 @@ export default function HomeSection3() {
                             />
                         </Carousel.Item>
                     </Carousel>
+                    <div className="custom-indicators-3">
+                        {[0, 1, 2].map((idx) => (
+                            <button
+                                key={idx}
+                                className={index === idx ? 'active' : ''}
+                                onClick={() => setIndex(idx)}
+                            ></button>
+                        ))}
+                    </div>
                 </div>
                 
             </Container>
