@@ -56,3 +56,11 @@
     display: block;
     object-fit: contain;
 }
+
+.carousel-inner {
+    transition: transform 0.6s ease-in-out; 
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}

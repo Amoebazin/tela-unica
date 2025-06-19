@@ -51,6 +51,7 @@
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 25px;
+    transition: background-color 0.3s ease;
 }
 
 .form select:hover{
@@ -73,9 +74,10 @@ button{
 
 button:hover{
     background-color: rgb(17, 92, 27);
+
 }
 
-/* Estilo da caixa de contatos */
+
 .contato-box {
     margin: 0 auto;
     display: flex;
@@ -87,16 +89,15 @@ button:hover{
     border-radius: 8px;
 }
 
-/* Linha com ícone + texto */
+
 .contato-linha {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 8px; /* distância entre ícone e texto */
+    gap: 8px; 
     margin-bottom: 12px;
 }
 
-/* Links de texto */
 .contato-linha a {
     color: white;
     text-decoration: none;
@@ -106,7 +107,6 @@ button:hover{
     text-decoration: underline;
 }
 
-/* Links de redes sociais */
 .contato-redes {
     margin: 0 auto;
     display: flex;
@@ -118,3 +118,17 @@ button:hover{
 }
 
 
+@media (max-width: 576px) {
+
+.caixa{
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgb(255, 208, 0);
+    padding: 70px 40px;
+    border-radius: 25px;
+}
+
+
+
+
+}

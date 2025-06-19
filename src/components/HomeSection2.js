@@ -51,7 +51,6 @@ export default function HomeSection2() {
                     </Carousel>
                 </div>
 
-                 {/* 🔥 Indicadores fora do Carousel */}
                     <div className="custom-indicators-2">
                         {[0, 1, 2].map((idx) => (
                             <button

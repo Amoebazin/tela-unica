@@ -90,6 +90,50 @@
     background-color: rgb(17, 92, 27);
 }
 
+@media (max-width: 576px) {
+
+.hero-carousel-container{
+    width: 80%;
+}
+
+.custom-indicators-2 {
+    margin-bottom: 12px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.custom-indicators-2 button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #3f3e3e;
+    opacity: 0.5;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-indicators-2 button.active {
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    background-color: #474242;
+}
+    
+.btn-send-signal {
+    margin: 0 auto;
+    background-color: rgb(27, 155, 44);
+    color: white;
+    width:  30%;
+    height: 50px;
+}
+
+}
+
 
 
 

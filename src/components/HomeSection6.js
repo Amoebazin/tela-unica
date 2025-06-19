@@ -18,7 +18,8 @@ export default function HomeSection6(){
                         controls={false}
                         indicators={false}
                         activeIndex={index}
-                        onSelect={handleSelect}>
+                        onSelect={handleSelect}
+                         >
                         <Carousel.Item className="LampIMG-item">
                             <img
                                 className="d-block w-100"

@@ -10,10 +10,10 @@ export default function HomeSection() {
       <div className="home-section-part part-1">
         <Container className="text-center">
           <div className="title-box">
-            <h1 className="display-5 text-dark fw-bold">
-              DESTAQUE-SE <br />
+            <h1 style={{ fontFamily: 'Fonte1' }} className="display-5 text-dark fw-bold">
+              <strong>DESTAQUE-SE <br />
               NO MERCADO COM A <br />
-              AJUDA DA BATS COLLAB!
+              AJUDA DA BATS COLLAB!</strong>
             </h1>
           </div>
         </Container>
